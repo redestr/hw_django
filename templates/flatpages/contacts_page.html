@@ -1,0 +1,12 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <i>{{ flatpage.title }}</i>
+    <hr>
+    <h3>Надпись в другом шрифте:</h3>
+{{ flatpage.content }}
+{% endblock content %}
